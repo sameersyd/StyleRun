@@ -1,0 +1,2 @@
+# Referenced at D:\Downloads\StyleRun-master (1)\StyleRun-master\app\build\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:31
+-keep class com.styleway.app.BaseApplication { <init>(...); }

@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'realm-android'
+
+repositories {
+    google()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.styleway.app"
+
+        resValue 'string', "app_name", "Style Way"
+        resValue 'string', "support_email", "info@stylerun.in"
+        resValue 'string', "geo_api_key", "AIzaSyANlySEu0xqZJJr_Crssynzo5pSwQciv0o"
+        resValue 'string', "admob_app_id", "ca-app-pub-3237882447729331~5451009131"
+        resValue 'string', "admob_banner_id", "ca-app-pub-3237882447729331/1407698631"
+        resValue 'string', "sinch_app_key", "a01d61ee-75e2-4f8b-8562-fd30347253e2"
+        resValue 'string', "sinch_app_secret", "md/zEJ5CREiWZY7MbuWmdg=="
+        resValue 'string', "sinch_app_environment", "sandbox.sinch.com"
+        resValue 'string', "authority", applicationId + ".fileprovider"
+
+        resValue 'color', "colorPrimary", "#212121"
+        resValue 'color', "colorPrimaryDark", "#5d5d5d"
+        resValue 'color', "colorAccent", "#616161"
+
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 37
+        versionName "5.2.5"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+dependencies {
+    implementation(name: 'sinch-android-rtc', version: '+', ext: 'aar')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation('com.googlecode.ez-vcard:ez-vcard:0.10.4') {
+        exclude group: 'org.freemarker'
+    }
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:customtabs:27.1.1'
+
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+    implementation 'com.google.firebase:firebase-storage:16.0.4'
+    implementation 'com.google.firebase:firebase-ads:17.0.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.8'
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.eyalbira.loadingdots:loading-dots:1.0.2'
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.1'
+    implementation 'com.kbeanie:multipicker:1.5@aar'
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation 'com.vanniktech:emoji-google:0.5.1'
+    implementation 'com.mxn.soul:flowingdrawer-core:2.0.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.google.firebase:firebase-auth:15.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

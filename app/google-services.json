@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "976025240909",
+    "firebase_url": "https://styleway-app-new.firebaseio.com",
+    "project_id": "styleway-app-new",
+    "storage_bucket": "styleway-app-new.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976025240909:android:43cc5b423e6a625a",
+        "android_client_info": {
+          "package_name": "com.styleway.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976025240909-48bgt2heaqenecr2g03rfdotvnarbqkf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlRRco7G_Zu34SOgjwnbzqSDlhDFVMSN4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
