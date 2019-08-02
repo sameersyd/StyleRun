@@ -872,7 +872,7 @@
     <string name="button_deny" ns1:keep="@string/button_deny">Deny</string>
     <string name="change_number">Change number?</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">e24986fa-2fbd-4d24-a841-e46143a5727a</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">7068d5bc-6c19-49ff-9c64-2ebeb76bdb5c</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -1023,6 +1023,7 @@ Neque aliquam vestibulum morbi blandit. Molestie nunc non blandit massa enim nec
     <string name="support_email" translatable="false">info@stylerun.in</string>
     <string name="tab_title_call">Calls</string>
     <string name="tab_title_chat">Chats</string>
+    <string name="tab_title_feed" translatable="false">NewsFeed</string>
     <string name="tab_title_group">Groups</string>
     <string name="type_your_message">Type your message</string>
     <string name="updated">Updated!</string>

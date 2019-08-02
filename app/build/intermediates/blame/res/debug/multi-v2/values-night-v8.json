@@ -4,7 +4,17 @@
             "outputFile": "/Users/sameernawaz/AndroidStudioProjects/StyleRun-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/sameernawaz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/3850a53ecf31e13b4266194ea6f90757/res/values-night-v8/values-night-v8.xml",
+                    "source": "/Users/sameernawaz/.gradle/caches/transforms-1/files-1.1/emoji-0.5.1.aar/e1ede0b886b7f25e3047ffd4d5e53c20/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,106,156",
+                        "endColumns": "50,49,47",
+                        "endOffsets": "101,151,199"
+                    }
+                },
+                {
+                    "source": "/Users/sameernawaz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/cb433e91523610c248c8b843bd6ecebb/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
@@ -18,16 +28,6 @@
                         "startOffsets": "204,274,358,442,538,640,742",
                         "endColumns": "69,83,83,95,101,101,93",
                         "endOffsets": "269,353,437,533,635,737,831"
-                    }
-                },
-                {
-                    "source": "/Users/sameernawaz/.gradle/caches/transforms-1/files-1.1/emoji-0.5.1.aar/731777abc15bd0610d10ca5931ceb82b/res/values-night-v8/values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,106,156",
-                        "endColumns": "50,49,47",
-                        "endOffsets": "101,151,199"
                     }
                 }
             ]

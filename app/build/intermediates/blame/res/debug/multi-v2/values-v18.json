@@ -4,7 +4,7 @@
             "outputFile": "/Users/sameernawaz/AndroidStudioProjects/StyleRun-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "/Users/sameernawaz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/3850a53ecf31e13b4266194ea6f90757/res/values-v18/values-v18.xml",
+                    "source": "/Users/sameernawaz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/cb433e91523610c248c8b843bd6ecebb/res/values-v18/values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

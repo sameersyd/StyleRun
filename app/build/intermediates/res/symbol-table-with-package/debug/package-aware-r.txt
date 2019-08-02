@@ -3182,7 +3182,6 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
-id adView
 id add
 id addConversation
 id addToContactText
@@ -3238,6 +3237,7 @@ id clip_vertical
 id close
 id collapseActionView
 id collapsingToolbar
+id contFrag_referral_swipeRefreshLayout
 id contact
 id contactAdd
 id contactImage
@@ -3281,6 +3281,8 @@ id exitUntilCollapsed
 id expand_activities_button
 id expandedImage
 id expanded_menu
+id feed_imageview
+id feed_textview
 id file_extention
 id file_icon
 id file_name
@@ -3290,6 +3292,7 @@ id fill_horizontal
 id fill_vertical
 id fixed
 id forever
+id frag_feed_listview
 id frag_sel_header_send
 id frameLayout
 id ghost_view
@@ -3577,12 +3580,14 @@ layout emoji_item
 layout emoji_skin_popup
 layout emoji_view
 layout empty_view
+layout feed_layout
 layout footer_view
 layout fragment_confirmation
 layout fragment_group_new
 layout fragment_group_select
 layout fragment_group_select_members
 layout fragment_main_recycler
+layout fragment_newsfeed
 layout fragment_options
 layout fragment_privacy
 layout fragment_profile_edit
@@ -3825,6 +3830,7 @@ string status_bar_notification_info_overflow
 string support_email
 string tab_title_call
 string tab_title_chat
+string tab_title_feed
 string tab_title_group
 string type_your_message
 string updated

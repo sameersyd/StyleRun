@@ -48,6 +48,7 @@ import com.mxn.soul.flowingdrawer_core.ElasticDrawer;
 import com.mxn.soul.flowingdrawer_core.FlowingDrawer;
 import com.sinch.android.rtc.calling.Call;
 import com.styleway.app.LastSeen;
+import com.styleway.app.MyFeedFragment;
 import com.styleway.app.R;
 import com.styleway.app.adapters.MenuUsersRecyclerAdapter;
 import com.styleway.app.adapters.ViewPagerAdapter;
@@ -179,25 +180,26 @@ public class MainActivity extends BaseActivity implements HomeIneractor, ChatIte
         fcmIdRef.child(userMe.getId()).setValue(FirebaseInstanceId.getInstance().getToken());
     }
 
-    private void loadAdd() {
-        AdView mAdView = findViewById(R.id.adView);
-
-        String admobAppId = getString(R.string.admob_app_id);
-        String admobBannerId = getString(R.string.admob_banner_id);
-        if (TextUtils.isEmpty(admobAppId) || TextUtils.isEmpty(admobBannerId)) {
-            mAdView.setVisibility(View.GONE);
-        } else {
-            AdRequest adRequest = new AdRequest.Builder().build();
-            mAdView.loadAd(adRequest);
-        }
-    }
+//    private void loadAdd() {
+//        AdView mAdView = findViewById(R.id.adView);
+//
+//        String admobAppId = getString(R.string.admob_app_id);
+//        String admobBannerId = getString(R.string.admob_banner_id);
+//        if (TextUtils.isEmpty(admobAppId) || TextUtils.isEmpty(admobBannerId)) {
+//            mAdView.setVisibility(View.GONE);
+//        } else {
+//            AdRequest adRequest = new AdRequest.Builder().build();
+//            mAdView.loadAd(adRequest);
+//        }
+//    }
 
     private void setupViewPager() {
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new MyUsersFragment(), getString(R.string.tab_title_chat));
         adapter.addFrag(new MyGroupsFragment(), getString(R.string.tab_title_group));
         adapter.addFrag(new MyCallsFragment(), getString(R.string.tab_title_call));
-        viewPager.setOffscreenPageLimit(3);
+        adapter.addFrag(new MyFeedFragment(), getString(R.string.tab_title_feed));
+        viewPager.setOffscreenPageLimit(4);
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
     }

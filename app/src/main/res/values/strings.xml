@@ -35,6 +35,7 @@ Neque aliquam vestibulum morbi blandit. Molestie nunc non blandit massa enim nec
     <string name="tab_title_chat">Chats</string>
     <string name="tab_title_group">Groups</string>
     <string name="tab_title_call">Calls</string>
+    <string name="tab_title_feed" translatable="false">NewsFeed</string>
     <string name="invitation_share_title">Share using..</string>
     <string name="delete_chat_title">Delete chat</string>
     <string name="delete_chat_message">Continue deleting selected chats?</string>
